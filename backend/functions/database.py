@@ -66,8 +66,4 @@ def store_message(request_message, response_message):
 def reset_messages():
     file_name = "stored_data.json"
 
-    # Initialize messages
-    messages = []
-
-    with open(file_name, "w") as f:
-        json.dump(messages, f)
+    open(file_name, "w").close()

@@ -33,7 +33,7 @@ async def check_health():
     return {"message": "Status: OK"}
 
 @app.get("/reset")
-async def reset_messages():
+async def reset_endpoint():
     reset_messages()
     return {"message": "Messages reset"}
 
